@@ -5,7 +5,7 @@ To start your React-Redux Client:
   * cd Company-Marketplace-Project-WEB-master
   * npm install
   * npm start
-  -
+  
 If you have not opened the server yet follow the steps on this link:
 [Click Here](https://github.com/andrewmatt/Company-Marketplace-Project-API)
 
