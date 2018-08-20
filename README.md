@@ -22,7 +22,9 @@ If you have not opened the server yet follow the steps on this link:
 [Click Here](https://github.com/andrewmatt/Company-Marketplace-Project-API)
 
 Check localhost:3000/ in order to use the app.
+
 Firefox recommended for the best viewing experience.
+
 *Not fully optimized yet
 
 -------
