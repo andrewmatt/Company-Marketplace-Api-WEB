@@ -1,0 +1,184 @@
+
+html, body {
+    height: 100%;
+    font-family: 'Berlin Sans FB Demi', 'Helvetica';
+  }
+
+  a, a:hover, a:visited, a:active{
+    text-decoration: none;
+    color: rgb(157, 180, 255);
+  }
+  
+  body {
+    font-size: 18px;
+    color: #141414;
+    background-color: #dddbd7;
+  }
+  
+  
+  .loginForm{
+    width:30%;
+    font-family: 'Berlin Sans FB Demi';
+    margin: 180px auto;
+    text-align: center;
+  }
+
+  .signupForm{
+    width:30%;
+    font-family: 'Berlin Sans FB Demi';
+    margin: 180px auto;
+    text-align: center;
+  }
+
+
+  .editProductButton{
+    float:right;
+    font-size: 18px;
+    padding: 1px 15px 1px 15px;
+    margin-left: 2px;
+  }
+
+  
+@media (max-width: 900px) {
+  .editProductButton {
+    float:right;
+    font-size: 18px;
+    width:75%;
+  }
+}
+
+  .productAddButton {
+    font-size: 16px;
+    float: right;
+  }
+
+  .spanText{
+    font-size: 18px;
+  }
+  
+  .titleText{
+    text-align: center;
+  }
+
+  .addProductButton{
+    width:22%;
+  }
+
+  .logoutButton{
+    width: 25%;
+    margin: 0 40%;
+  }
+
+  .nav {
+    padding: 0 1rem;
+    height: 55px;
+    width:100%;
+    background-color: rgb(87, 83, 83);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+.dropdown .nav-link {color:rgb(104, 87, 87); font-size: 22px;}
+.dropdown .dropdown-item {text-align: left; color:rgb(29, 23, 23); font-size: 14px;}
+.navbar-brand {font-size: 24px;}
+
+.wrapper {
+  display: inline-flex;
+  flex-direction: row;
+  width:15%;
+  background-color: rgba(247, 247, 247, 0.692);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  
+}
+#sidebar {
+  min-height: 100vh;
+}
+
+.formWidth{
+  width:75%;
+  padding-top:25px;
+  padding-right: 2.5%;
+  padding-left: 85px;
+  margin: 0 25px 0 25px;
+  
+}
+
+@media (max-width: 989px) {
+  .wrapper {
+    display: none;
+  }
+}
+
+@media (min-width: 990px) {
+  .btnShow {
+    display: none;
+  }
+}
+
+@media (max-width: 990px) {
+  .btnShow {
+    margin-left: 50px;
+    margin-top: 25px;
+    color: white;
+  }
+}
+
+
+#main {
+	color:white;
+  width: 100%;
+  height: 100vh;
+}
+
+.h1 {
+	font-family:"Berlin Sans FB Demi", Helvetica;
+	font-size: 35px;
+  font-weight: 400;
+  color: rgba(29, 26, 26, 0.685);
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
+.dashboardDiv {
+  background-color: white;
+  display: inline-block;
+  position: relative;
+  color: rgba(29, 26, 26, 0.685);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 40%;
+  margin-left: 45px;
+  margin-top: 15px;
+  height: 120px;
+}
+
+.text {
+  font-size: 50px;
+  text-align: center !important;
+  vertical-align: middle;
+  line-height: 25px;
+}
+.text2 {
+  font-size: 75px;
+  text-align: center !important;
+  vertical-align: middle;
+  line-height: 25px;
+}
+
+
+.textPadding{
+  padding-top: 15px;
+  padding-left: 5px;
+}
+
+.sidebarText{
+  color:rgba(87, 64, 64, 0.589);
+  font-family: 'Berlin Sans FB Demi', 'Helvetica';
+  margin-left: 1vh;
+}
+
+.tableBorder{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
