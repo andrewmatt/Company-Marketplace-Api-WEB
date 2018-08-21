@@ -29,6 +29,8 @@ Firefox recommended for the best viewing experience.
 
 -------
 
+## Learn more
+
 App generated with create-react-app:
 https://github.com/facebook/create-react-app
 
