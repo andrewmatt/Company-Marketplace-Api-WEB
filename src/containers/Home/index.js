@@ -5,6 +5,7 @@ import Navbar from '../../components/Navbar';
 import Sidebar from '../../components/Sidebar';
 import { getProducts, getProduct }  from '../../actions/product';
 import { Link } from 'react-router';
+import {ResponsiveContainer, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend} from 'recharts';
 
 class Home extends Component {
 
@@ -32,6 +33,7 @@ class Home extends Component {
 
   render() {
     const {currentCompanyProducts} = this.props;
+    const data= currentCompanyProducts;
     const sum =  this.calculateTotalValue(currentCompanyProducts);
     return (
       
@@ -40,7 +42,6 @@ class Home extends Component {
       <div className="flex-container">
       <Sidebar/> 
       <div id="main">
-
         <div className="row">
           <div className="dashboardDiv ">
             <p> &nbsp; Total Products</p> 
@@ -54,7 +55,23 @@ class Home extends Component {
             {sum}$
             </p>
           </div>
-
+          <br/>
+          { data.length > 0 && 
+          <ResponsiveContainer width={800} height="80%">
+          <div className="dashboardDivChart">
+            <p> &nbsp; Product Quantity </p>
+            <BarChart width={650} height={300} data={data}>
+              <CartesianGrid strokeDasharray="3 3" />
+              <XAxis dataKey="name" />
+              <YAxis />
+              <Tooltip />
+              <Legend />
+              <Bar dataKey="stock_qty" name="Stock Quantity" fill="#8884d8" />
+            </BarChart>
+          </div>
+          </ResponsiveContainer>
+          }
+          <br/>
           <div>            
           <Link to="/company/products" className="sidebarText btnShow" href="/company/products" >
 
@@ -63,6 +80,8 @@ class Home extends Component {
             </button>
           </Link>
           </div>
+
+          
 
         </div>
       </div>

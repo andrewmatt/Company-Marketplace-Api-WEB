@@ -38,7 +38,7 @@ class ProductEditForm extends Component {
         className='formWidth'
          onSubmit={handleSubmit(this.handleSubmit)}
       >
-        <h3> Edit Product: </h3>
+        <h3> Edit Product (All Fields are Requied) </h3>
 
         <label>Name</label>
         <Field
