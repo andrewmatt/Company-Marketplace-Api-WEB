@@ -5,6 +5,9 @@
 const API = process.env.REACT_APP_API_URL;
 
 function headers() {
+  
+  // this method sets the headers and the Bearer authorization Token
+  
   const token = JSON.parse(localStorage.getItem('token'));
 
   return {
@@ -25,6 +28,7 @@ function parseResponse(response) {
 
 export default {
   get(url) {
+    // GETs the link from the API, applies headers (Used for getByID and getAll).
     return fetch(`${API}${url}`, {
       method: 'GET',
       headers: headers(),
@@ -37,6 +41,7 @@ export default {
   },
 
   post(url, data) {
+    // POSTs the link to the API, applies headers (Used for Add).
     const body = JSON.stringify(data);
 
     return fetch(`${API}${url}`, {
@@ -52,6 +57,7 @@ export default {
   },
 
   patch(url, data) {
+    //PATCHes the link to the API, applies headers (Used for Update).
     const body = JSON.stringify(data);
 
     return fetch(`${API}${url}`, {
@@ -67,6 +73,7 @@ export default {
   },
 
   delete(url) {
+    //DELETEs from a specific ID that is passed (Used for Delete).
     return fetch(`${API}${url}`, {
       method: 'DELETE',
       headers: headers(),
